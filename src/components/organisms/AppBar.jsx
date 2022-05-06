@@ -3,7 +3,6 @@ import {
   AppBar,
   Badge,
   Box,
-  CardMedia,
   IconButton,
   Menu,
   MenuItem,
@@ -95,13 +94,26 @@ export default function AppBarComp() {
                 ))}
               </Menu>
             </Box>
-            <CardMedia
+            {/* <CardMedia
               sx={{ cursor: "pointer", width: 160, mr: 2 }}
               component="img"
               onClick={() => navigate("/")}
               src="https://ik.imagekit.io/duniakeramik/Dunia_Keramik__2_-removebg-preview_TJiuJARjl.png"
               alt="logo"
-            />
+            /> */}
+            <Box
+              onClick={() => navigate("/")}
+              sx={{
+                mr: 2,
+                display: "flex",
+                cursor: "pointer",
+                alignItems: "center",
+              }}
+            >
+              <Typography variant="h6" color="inherit" noWrap>
+                {process.env.REACT_APP_WEBSITE_NAME}
+              </Typography>
+            </Box>
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },

@@ -8,19 +8,19 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import AppBarComp from "../components/AppBar";
-import Copyright from "../components/Footer";
+import AppBarComp from "../components/organisms/AppBar";
+import Copyright from "../components/organisms/Footer";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-import ProductImage from "../components/ProductImage";
+import ProductImage from "../components/molecules/ProductImage";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { connect } from "react-redux";
-import { getProduct } from "../configs/actions";
+import { getProduct } from "../redux/actions";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { insertData } from "../utils/cart";
-import SnackNotif from "../components/snacknotif";
+import SnackNotif from "../components/atoms/snacknotif";
 import { fCurrency } from "../utils/formatNumber";
 
 function Product(props) {

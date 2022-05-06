@@ -1,8 +1,8 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import AppBarComp from "../components/AppBar";
-import Copyright from "../components/Footer";
-import ProductCart from "../components/productCart";
+import AppBarComp from "../components/organisms/AppBar";
+import Copyright from "../components/organisms/Footer";
+import ProductCart from "../components/molecules/productCart";
 import { getCart } from "../utils/cart";
 import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import emptyCart from "../assets/empty-cart.json";

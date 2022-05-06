@@ -1,9 +1,9 @@
-import AppBarComp from "../components/AppBar";
+import AppBarComp from "../components/organisms/AppBar";
 import { Box, Button } from "@mui/material";
-import ImageButtonComp from "../components/ImageButton";
-import Copyright from "../components/Footer";
+import ImageButtonComp from "../components/organisms/ImageButton";
+import Copyright from "../components/organisms/Footer";
 import {useNavigate} from "react-router-dom";
-import TextSearch from "../components/textSearch";
+import TextSearch from "../components/molecules/textSearch";
 
 export default function Home() {
   const navigate = useNavigate();

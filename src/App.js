@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Router } from "./routes";
 import algoliasearch from "algoliasearch/lite";
 import { Provider } from "react-redux";
-import store from "./configs/store";
+import store from "./redux/store";
 import { InstantSearch } from "react-instantsearch-hooks";
 
 const searchClient = algoliasearch(

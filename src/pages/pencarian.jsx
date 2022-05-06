@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import AppBarComp from "../components/AppBar";
-import Copyright from "../components/Footer";
-import TextSearch from "../components/textSearch";
+import AppBarComp from "../components/organisms/AppBar";
+import Copyright from "../components/organisms/Footer";
+import TextSearch from "../components/molecules/textSearch";
 import { ProductsSearch } from "../layouts/productsSearch";
 
 function Pencarian() {

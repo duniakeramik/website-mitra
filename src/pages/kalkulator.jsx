@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
-import AppBarComp from "../components/AppBar";
-import Copyright from "../components/Footer";
-import FormCalculator from "../layouts/formKalkulator";
-import CalculatorDetail from "../layouts/kalkulatorResult";
+import AppBarComp from "../components/organisms/AppBar";
+import Copyright from "../components/organisms/Footer";
+import FormCalculator from "../components/organisms/formKalkulator";
+import CalculatorDetail from "../components/organisms/kalkulatorResult";
 
 const Kalkulator = (props) => {
   const [value, setValue] = useState({

@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import { useHits } from 'react-instantsearch-hooks';
 import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import noData from '../assets/no-search-result.json';
-import CardProduct from '../components/CardProduct';
+import CardProduct from '../components/molecules/CardProduct';
 
 export function ProductsSearch() {
   const { hits } = useHits();

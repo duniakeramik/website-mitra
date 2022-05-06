@@ -1,7 +1,7 @@
 import { Box, Card, Typography, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { fCurrency } from "../utils/formatNumber";
-import Label from "./Label";
+import { fCurrency } from "../../utils/formatNumber";
+import Label from "../atoms/Label";
 import { useNavigate } from "react-router-dom";
 
 const ProductImgStyle = styled("img")({

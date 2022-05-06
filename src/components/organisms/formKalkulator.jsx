@@ -4,8 +4,8 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import InputAdornment from "@mui/material/InputAdornment";
-import ButtonLoading from "../components/buttonLoading";
-import AutocompleteComp from "../components/autoCompleteInput";
+import ButtonLoading from "../atoms/buttonLoading";
+import AutocompleteComp from "../molecules/autoCompleteInput";
 
 const ukuran = [
   "25 x 25",

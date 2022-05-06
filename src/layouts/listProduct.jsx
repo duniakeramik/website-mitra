@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material";
-import CardProduct from "../components/CardProduct";
+import CardProduct from "../components/molecules/CardProduct";
 import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import noData from '../assets/no-data.json';
 

@@ -8,8 +8,8 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { Avatar } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { fCurrency } from "../utils/formatNumber";
-import { deleteCart, updateCart } from "../utils/cart";
+import { fCurrency } from "../../utils/formatNumber";
+import { deleteCart, updateCart } from "../../utils/cart";
 
 export default function ProductCart(props) {
   const [qty, setQty] = React.useState(0);

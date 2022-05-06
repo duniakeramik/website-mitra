@@ -1,9 +1,9 @@
 import { Box, Button, Typography } from "@mui/material";
 import Lottie from "react-lottie-player/dist/LottiePlayerLight";
 import { useNavigate } from "react-router-dom";
-import Copyright from "../components/Footer";
+import Copyright from "../components/organisms/Footer";
 import notfound from "../assets/notfound.json";
-import AppBarComp from "../components/AppBar";
+import AppBarComp from "../components/organisms/AppBar";
 
 const NotFound = () => {
   const navigate = useNavigate();

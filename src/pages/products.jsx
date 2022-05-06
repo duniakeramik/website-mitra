@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import AppBarComp from "../components/AppBar";
-import Copyright from "../components/Footer";
-import FilterButton from "../components/filterButton";
+import AppBarComp from "../components/organisms/AppBar";
+import Copyright from "../components/organisms/Footer";
+import FilterButton from "../components/atoms/filterButton";
 import ListProduct from "../layouts/listProduct";
 import { connect } from "react-redux";
 import loading from "../assets/loading.json";
@@ -11,7 +11,7 @@ import {
   getProductByUkuran,
   getProducts,
   getProductsbyKategori,
-} from "../configs/actions";
+} from "../redux/actions";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Lottie from "react-lottie-player/dist/LottiePlayerLight";
