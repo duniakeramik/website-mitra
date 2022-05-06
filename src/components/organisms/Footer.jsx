@@ -12,7 +12,7 @@ function Copyright(props) {
         width: "95%",
         color: "#fff",
         p: { xs: 2, md: 4 },
-        mt: { xs: 2, md: 0},
+        mt: { xs: 2, md: 0 },
       }}
     >
       <Box
@@ -28,48 +28,53 @@ function Copyright(props) {
             mb: 3,
           }}
         >
-          <a
-            href="https://www.instagram.com/tokoduniakeramik"
-            target="_blank"
-            rel="noopener noreferrer"
+          <IconButton
+            onClick={() => {
+              window.open(
+                process.env.REACT_APP_INSTAGRAM_URL ||
+                  "https://www.instagram.com/tokoduniakeramik"
+              );
+            }}
+            sx={{ color: "primary.main" }}
           >
-            <IconButton sx={{ color: "primary.main" }}>
-              <InstagramIcon
-                sx={{
-                  color: "secondary.main",
-                  mr: 1,
-                }}
-              />
-            </IconButton>
-          </a>
-          <a
-            href="https://www.facebook.com/tokoduniakeramik"
-            target="_blank"
-            rel="noopener noreferrer"
+            <InstagramIcon
+              sx={{
+                color: "secondary.main",
+                mr: 1,
+              }}
+            />
+          </IconButton>
+          <IconButton
+            onClick={() => {
+              window.open(
+                process.env.REACT_APP_FACEBOOK_URL ||
+                  "https://www.facebook.com/tokoduniakeramik"
+              );
+            }}
+            sx={{ color: "primary.main" }}
           >
-            <IconButton sx={{ color: "primary.main" }}>
-              <FacebookIcon
-                sx={{
-                  color: "secondary.main",
-                  mr: 1,
-                }}
-              />
-            </IconButton>
-          </a>
-          <a
-            href="https://www.google.com/search?q=dunia+keramik&sxsrf=APq-WBskbN16UWDdEJSb5z976-6IVCFa2g%3A1650722677151&ei=dQdkYvzzCJyH4-EP_qqlsAI&oq=dunia+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzILCAAQgAQQsQMQgwEyDAgAELEDEIMBEAoQQzILCAAQgAQQsQMQgwEyBwgAELEDEEMyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATIECAAQQzILCAAQgAQQsQMQgwEyBQgAEIAEOgcIABBHELADOgoIABBHELADEMkDOggIABCSAxCwAzoKCC4QxwEQrwEQJzoKCAAQsQMQgwEQQzoECC4QQzoLCC4QgAQQxwEQrwE6BwguENQCEEM6CgguELEDENQCEEM6CgguEMcBENEDEEM6CgguEMcBEKMCEENKBAhBGABKBAhGGABQoAxYnxNgkh9oAXABeACAAVyIAY8EkgEBNpgBAKABAcgBCcABAQ&sclient=gws-wiz "
-            target="_blank"
-            rel="noopener noreferrer"
+            <FacebookIcon
+              sx={{
+                color: "secondary.main",
+                mr: 1,
+              }}
+            />
+          </IconButton>
+          <IconButton
+            onClick={() => {
+              window.open(
+                "https://www.google.com/search?q=dunia+keramik&sxsrf=APq-WBskbN16UWDdEJSb5z976-6IVCFa2g%3A1650722677151&ei=dQdkYvzzCJyH4-EP_qqlsAI&oq=dunia+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzILCAAQgAQQsQMQgwEyDAgAELEDEIMBEAoQQzILCAAQgAQQsQMQgwEyBwgAELEDEEMyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATIECAAQQzILCAAQgAQQsQMQgwEyBQgAEIAEOgcIABBHELADOgoIABBHELADEMkDOggIABCSAxCwAzoKCC4QxwEQrwEQJzoKCAAQsQMQgwEQQzoECC4QQzoLCC4QgAQQxwEQrwE6BwguENQCEEM6CgguELEDENQCEEM6CgguEMcBENEDEEM6CgguEMcBEKMCEENKBAhBGABKBAhGGABQoAxYnxNgkh9oAXABeACAAVyIAY8EkgEBNpgBAKABAcgBCcABAQ&sclient=gws-wiz"
+              );
+            }}
+            sx={{ color: "primary.main" }}
           >
-            <IconButton sx={{ color: "primary.main" }}>
-              <GoogleIcon
-                sx={{
-                  color: "secondary.main",
-                  mr: 1,
-                }}
-              />
-            </IconButton>
-          </a>
+            <GoogleIcon
+              sx={{
+                color: "secondary.main",
+                mr: 1,
+              }}
+            />
+          </IconButton>
         </Box>
         <Box
           sx={{
@@ -78,7 +83,7 @@ function Copyright(props) {
           }}
         >
           <Typography variant="body2" color="text.secondary" align="center">
-            Dunia Keramik © Copyright {new Date().getFullYear()}
+           {process.env.REACT_APP_WEBSITE_NAME} © Copyright {new Date().getFullYear()}
           </Typography>
         </Box>
       </Box>

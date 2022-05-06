@@ -111,7 +111,7 @@ export default function AppBarComp() {
               }}
             >
               <Typography variant="h6" color="inherit" noWrap>
-                {process.env.REACT_APP_WEBSITE_NAME}
+                {process.env.REACT_APP_WEBSITE_NAME || 'TOKO KERAMIK'}
               </Typography>
             </Box>
             <Box

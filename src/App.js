@@ -14,13 +14,16 @@ const searchClient = algoliasearch(
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#992d0d",
+      // main: "#992d0d",
+      main: `${process.env.REACT_APP_PRIMARY_COLOR}` || "#992d0d",
     },
     secondary: {
-      main: "#c36505",
+      // main: "#c36505",
+      main: `${process.env.REACT_APP_SECONDARY_COLOR}` || "#c36505",
     },
     background: {
-      main: "#eaebe8",
+      // main: "#eaebe8",
+      main: `${process.env.REACT_APP_THIRD_COLOR}` || "#eaebe8",
     },
   },
 });
