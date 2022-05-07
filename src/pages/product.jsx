@@ -178,7 +178,7 @@ function Product(props) {
                 </Button>
                 <Button
                   onClick={() => {
-                    window.location.href = `https://api.whatsapp.com/send?phone=6281249363040&text=Hallo admin, saya ingin menanyakan *${product.kategori} ${product.name}* ukuran ${product.ukuran}`;
+                    window.location.href = `https://api.whatsapp.com/send?phone${process.env.REACT_APP_WHATSSAPP}&text=Hallo admin, saya ingin menanyakan *${product.kategori} ${product.name}* ukuran ${product.ukuran}`;
                   }}
                   variant="contained"
                   color="secondary"
